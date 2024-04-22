@@ -33,16 +33,16 @@ Funcionalidad de la aplicación
 
 1. Pantalla consulta satisfactoria al servicio web usando retrofit
 
-![mars_photos_ok.jpg](app%2Fsampledata%2Fmars_photos_ok.jpg)
+<img alt="mars_photos_ok.jpg" src="app%2Fsampledata%2Fmars_photos_ok.jpg" width="250"/>
 
 2. Pantalla while fetching
 
-![mars_photos_fetching.jpg](app%2Fsampledata%2Fmars_photos_fetching.jpg)
+<img alt="mars_photos_fetching.jpg" src="app%2Fsampledata%2Fmars_photos_fetching.jpg" width="250"/>
 
 3. Funcionalidad de error al cargar la imágen
 
-![mars_photos_lost_connection.jpg](app%2Fsampledata%2Fmars_photos_lost_connection.jpg)
+<img alt="mars_photos_lost_connection.jpg" src="app%2Fsampledata%2Fmars_photos_lost_connection.jpg" width="250"/>
 
 4. Funcionalidad de retry ante pérdida de conectividad
 
-![mars_photos_no_network.jpg](app%2Fsampledata%2Fmars_photos_no_network.jpg)
+<img alt="mars_photos_no_network.jpg" src="app%2Fsampledata%2Fmars_photos_no_network.jpg" width="250" style="margin: 0 auto"/>
