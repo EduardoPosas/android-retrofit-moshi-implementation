@@ -1,38 +1,48 @@
 Mars Photos
 ==================================
 
-Mars Photos app is a demo app that shows actual images of Mars' surface. These images are
-real-life photos from Mars captured by NASA's Mars rovers. The data is stored on a Web server
-as a REST web service.
+Mars Photos es una aplicación que mustra imágenes de la superficie de marte. Estas imágene son
+reales de Marte y son capturadas por el Mars rovers de la NASA. La información está almacenada en un
+servidor web como un servicio web REST.
 
-This app demonstrated the use of [Retrofit](https://square.github.io/retrofit/) to make REST requests to the web service, [kotlinx.serialization](https://github.com/Kotlin/kotlinx.serialization) to
-handle the deserialization of the returned JSON to Kotlin data objects, and [Coil](https://coil-kt.github.io/coil/) to load images by URL.
+La aplicación muestra el uso de [Retrofit](https://square.github.io/retrofit/) para realizar peticiones REST a un servicio web,
+se utiliza [Moshi](https://square.github.io/moshi/1.x/) para manejar la deserialización del JSON retornado y mapearlos a data objects de Kotlin,
+y [Coil](https://coil-kt.github.io/coil/) para cargar imágenes por URL.
 
-Pre-requisites
+Pre-requisitos
 --------------
 
-You need to know:
-- How to create Composable functions.
-- How to use architecture components including ViewModel.
-- How to use coroutines for long-running tasks.
-- Familiarity with lazy grid
+Se requiere tener conocimiento de:
+- Como crear Composables.
+- Como utilizar componentes de arquitectura incluyendo ViewModel.
+- Como utilizr corutinas para tareas asíncronas.
+- Familiaridad con lazy grid composable
 
-Getting Started
----------------
+Componentes utilizados de la aplicación
+--------------
 
-1. [Install Android Studio](https://developer.android.com/studio/install.html), if you don't already
-   have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
+- Inyección de dependencias manual (application class)
+- Proveedor de ViewModel (viewModelFactory)
+- Scaffold
+- LazyVerticalGrid
+- Card composable
+- AsyncImage
 
-## [Build this app through hands-on codelabs in the Android Basics with Compose Course](https://developer.android.com/courses/android-basics-compose/course)
+Funcionalidad de la aplicación
+--------------
 
-### [Get data from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-getting-data-internet)
-Learn how to use community-developed libraries to connect to a web service to retrieve and display data in your Android Kotlin compose app. 
+1. Pantalla consulta satisfactoria al servicio web usando retrofit
 
-### [Add repository and Manual DI](https://developer.android.com/codelabs/basic-android-kotlin-compose-add-repository)
-Learn how to improve the architecture of the app by separating the network calls into a repository.
+![mars_photos_ok.jpg](app%2Fsampledata%2Fmars_photos_ok.jpg)
 
-### [Load and display images from the internet](https://developer.android.com/codelabs/basic-android-kotlin-compose-load-images)
-Use the Coil library to load and display photos from the internet in your Android Compose app. 
+2. Pantalla while fetching
+
+![mars_photos_fetching.jpg](app%2Fsampledata%2Fmars_photos_fetching.jpg)
+
+3. Funcionalidad de error al cargar la imágen
+
+![mars_photos_lost_connection.jpg](app%2Fsampledata%2Fmars_photos_lost_connection.jpg)
+
+4. Funcionalidad de retry ante pérdida de conectividad
+
+![mars_photos_no_network.jpg](app%2Fsampledata%2Fmars_photos_no_network.jpg)
